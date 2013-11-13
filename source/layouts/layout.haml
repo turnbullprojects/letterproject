@@ -20,22 +20,28 @@
     
     = javascript_include_tag "vendor/modernizr-2.6.1.min"
     = stylesheet_link_tag "site"
+    %link(href='http://fonts.googleapis.com/css?family=Raleway|Open+Sans:300italic,300,600|Linden+Hill' rel='stylesheet' type='text/css')
+
   %body
     /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
     %header
       #section1.section
         .container
-          #intro 
-            %h1 The New York Letter Project
-            %h2 A letter from the past, to your door
-            %p Imagine receiving a letter home from the trenches of WW1, a piece of a long-forgotten love affair started on your doorstep, or news of a windfall that forever changed the lives of the people who lived there before you. 
-            %p Every building has a history. What’s yours?
-            %input 
-            %button Get a Letter
+          #intro-box
+            #intro
+              %h1 The Letter Project : New York
+              .strong-divider
+              %h2 A letter from the past, to your door
+              .light-divider
+              %p Imagine receiving a letter home from the trenches of WW1, a piece of a long-forgotten love affair started on your doorstep, or news of a windfall that forever changed the lives of the people who lived there before you. 
+              %p Every building has a history. What’s yours?
+              %input(type="text")
+              .button 
+                Get a Letter
         .clearfix
 
       #section2.section
-        .cntainer
+        .container
           #explanation
             %h2 What is the New York Letter Project?
             %p Help us put letters from the past online and resend them to the people living there now. 
