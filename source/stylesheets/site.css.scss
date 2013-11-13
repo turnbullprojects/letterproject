@@ -8,3 +8,6 @@
 *= require "_layout/grid"
 
 */
+@import 'mixins';
+
+h1 { color: $blue; }
