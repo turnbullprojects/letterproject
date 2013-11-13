@@ -10,38 +10,70 @@
 */
 @import 'mixins';
 
+//////////////////////////////////////////////////
+// GLOBAL
+//////////////////////////////////////////////////
 body {
-  background-image: url('/images/letters-background.jpg');
-  background-size: cover;
+  color: $dark-grey;
 }
 
 h1 { 
   color: $blue; 
 }
 
-#intro {
-  background-color: white;
-  width: 560px;
-  margin: 0 auto;
-  text-align: center;
+//////////////////////////////////////////////////
+// STRUCTURE
+//////////////////////////////////////////////////
+
+.section { width: 100%; }
+.container { width: 940px; margin: 0 auto; }
+
+#section1{
+  padding: 50px 0;
+  #intro { 
+    width: 560px;
+    height: 400px; 
+    margin: 40px auto;
+  }
 }
 
-#explanation {
-  width: 100%;
+#section2 {
+  #explanation { width: 50%; float: left; }
+  #letter-example { width: 50%; float: left; }
 }
 
-#explanation-container {
-  width: 940px;
-  background-color: gray;
-  margin: 0 auto;
+#section3 {
+  margin-bottom: 200px;
+  .detailcol { 
+    width: 240px;
+    margin-right:40px;
+    float: left;
+  }
 }
 
-#explanation {
-  width: 50%;
-  float: left;
+//////////////////////////////////////////////////
+// STYLE
+//////////////////////////////////////////////////
+
+#section1 {
+  background-image: url('/images/background.jpg');
+  background-size:cover;
+
+  #intro {
+    background-color: white;
+    text-align: center;
+  }
 }
 
-#letter-example {
-  width: 50%;
-  float: left;
+#section2 {
+  background: $dark-grey;
+  #explanation {
+    color: white;
+  }
+
 }
+
+#section3 {
+  background: white;
+}
+
