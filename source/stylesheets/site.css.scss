@@ -58,14 +58,17 @@ hr {
 }
 
 .longrule {
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  width: 30em;
+  width: 20em;
+  height: 6px;
+  border-top: solid 2px black;
+  border-bottom: solid 2px gray;
 }
 
 .shortrule {
   width: 10em;
+  height: 3px;
+  border-top: solid 2px gray;
+  border-bottom: none;
 }
 
 //////////////////////////////////////////////////
@@ -85,7 +88,7 @@ hr {
 }
 
 #section2 {
-  padding: 50px;
+  padding: 50px 0px;
   #explanation { 
     width: 50%; 
     float: left; 
