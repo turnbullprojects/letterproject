@@ -10,4 +10,38 @@
 */
 @import 'mixins';
 
-h1 { color: $blue; }
+body {
+  background-image: url('/images/letters-background.jpg');
+  background-size: cover;
+}
+
+h1 { 
+  color: $blue; 
+}
+
+#intro {
+  background-color: white;
+  width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#explanation {
+  width: 100%;
+}
+
+#explanation-container {
+  width: 940px;
+  background-color: gray;
+  margin: 0 auto;
+}
+
+#explanation {
+  width: 50%;
+  float: left;
+}
+
+#letter-example {
+  width: 50%;
+  float: left;
+}
