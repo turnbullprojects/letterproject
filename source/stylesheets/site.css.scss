@@ -13,61 +13,65 @@
 //////////////////////////////////////////////////
 // GLOBAL
 //////////////////////////////////////////////////
+
 body {
   color: $dark-grey;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-h1 { 
-  color: black; 
+h1 {
   font-family: 'Raleway', sans-serif;
-  margin-top:0px;
-  margin-bottom: 20px;
-  font-size: 38px;
+  font-size:30px;
 }
 
-h2, h3 { font-family: 'Linden Hill', serif; }
-h2 { font-size: 22px; margin:30px 0; }
-h3 { font-size: 18px; }
-
-p { 
-  font-size: 18px;
-  line-height:28px;
-
-  margin-bottom: 30px; 
-}
-.strong-divider {
-  margin:10px auto;
-  width: 90%;
-  height: 5px;
-  background: none;
-  border-top: 2px solid black;
-  border-bottom: 1px solid $grey;
-}
-
-.light-divider {
-  margin:20px auto;
-  width: 70%;
-  height: 5px;
-  background: none;
-  border-top: 1px solid $grey;
-}
-
-input[type="text"] {
-  display: block;
+h2 {
+  font-family: 'Linden Hill', serif;
   padding: 10px 0;
-  width: 100%;
 }
 
-.button { 
-  width: 100%;
-  padding: 10px 0;
-  background: $blue;
+p, ul, ol, input {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+}
+
+input {
+  width: 19em;
+  margin-top: 20px;
+  padding-left: 1em;
+  padding-top: 1015px;
+  padding-bottom: 15px;
+}
+
+button {
+  background-color: #49A0ff;
   text-transform: uppercase;
   color: white;
-  font-weight: 400;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  width: 20em;
+  letter-spacing: 0.05em;
+}
 
+hr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.longrule {
+  width: 20em;
+  height: 6px;
+  border-top: solid 2px black;
+  border-bottom: solid 2px gray;
+}
+
+.shortrule {
+  width: 10em;
+  height: 3px;
+  border-top: solid 2px gray;
+  border-bottom: none;
 }
 
 //////////////////////////////////////////////////
@@ -79,29 +83,47 @@ input[type="text"] {
 
 #section1{
   padding: 50px 0;
-  #intro-box { 
-    padding: 30px 0;
-    width: 560px;
-    margin: 40px auto;
-    #intro { 
+  #intro { 
+    width: 420px;
+    margin: 80px auto;
+    padding: 20px 70px 40px;
+    p {
       width: 360px;
-      margin: 0 auto;  
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
 #section2 {
-  #explanation { width: 50%; float: left; }
-  #letter-example { width: 50%; float: left; }
+  padding: 50px 0px;
+  #explanation { 
+    width: 50%; 
+    float: left; 
+    h1, p, hr {
+      width: 80%;
+      margin-left: -40px;
+    }
+  }
+  #letter-example { 
+    width: 50%; 
+    float: left; 
+  }
 }
 
 #section3 {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+  h2 { text-align: center; }
   .detailcol { 
     width: 240px;
-    margin-right:40px;
+    margin: auto 35px;
+    padding-top: 30px;
     float: left;
   }
+}
+
+#section4 {
+  height: 200px;
 }
 
 //////////////////////////////////////////////////
@@ -117,19 +139,29 @@ input[type="text"] {
     border: 2px solid black;
   }
   #intro {
+    background: white;
     text-align: center;
+    border: solid 2px black;
   }
+
 }
 
 #section2 {
   background: $dark-grey;
   #explanation {
     color: white;
+    .ital {
+      font-style: italic;
+      margin-top: 20px;
+    }
   }
-
 }
 
 #section3 {
   background: white;
 }
 
+#section4 {
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+}
