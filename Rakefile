@@ -10,6 +10,6 @@ task :deploy do
 
   system "git commit -m 'site update'"
   system "rm -rf /tmp/build"
-  system "git push"
+  system "git push origin gh-pages"
   system "git checkout master"
 end
