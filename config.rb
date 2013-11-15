@@ -30,9 +30,9 @@ activate :livereload
 # page "/path/to/file.html", :layout => :otherlayout
 # 
 # A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
+with_layout :confirm do
+   page "/confirm/*"
+end
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do

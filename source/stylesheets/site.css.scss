@@ -18,6 +18,7 @@ body {
   color: $dark-grey;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  font-size: 15px;
 }
 
 h1 {
@@ -27,15 +28,28 @@ h1 {
 
 h2 {
   font-family: 'Linden Hill', serif;
-  padding: 10px 0;
+  font-size:26px;
 }
 
+h3 {
+  font-family: 'Linden Hill', serif;
+  font-size:22px;
+}
+
+a {
+  color: $blue;
+}
 p, ul, ol, input {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6em;
 }
 
-input {
+strong { 
+  font-weight: 400;
+  font-size: 17px;
+}
+
+input[type="email"]{
   width: 19em;
   margin-top: 20px;
   padding-left: 1em;
@@ -43,15 +57,14 @@ input {
   padding-bottom: 15px;
 }
 
-button {
-  background-color: #49A0ff;
+input[type="submit"] {
+  background-color: $blue;
   text-transform: uppercase;
   color: white;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
-  width: 20em;
   letter-spacing: 0.05em;
 }
 
@@ -81,8 +94,22 @@ hr {
 .section { width: 100%; }
 .container { width: 940px; margin: 0 auto; }
 
+#body-bg { 
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -999999;
+}
+.detailcol { 
+  width: 240px;
+  margin: auto 35px;
+  padding-top: 0px;
+  float: left;
+}
 #section1{
-  padding: 50px 0;
+  @include emailForm(306px);
+  padding: 30px 0 30px;
   #intro { 
     width: 420px;
     margin: 80px auto;
@@ -92,47 +119,58 @@ hr {
       margin-left: auto;
       margin-right: auto;
     }
+    .email-form { margin-left: auto; margin-right: auto; }
   }
+  
 }
 
 #section2 {
+
+  @include emailForm(376px);
   padding: 50px 0px;
   #explanation { 
-    width: 50%; 
+    width: 380px; 
+    margin-right:90px;
     float: left; 
-    h1, p, hr {
-      width: 80%;
-      margin-left: -40px;
-    }
   }
   #letter-example { 
-    width: 50%; 
+    width: 470px; 
     float: left; 
   }
 }
 
 #section3 {
+  @include emailForm(480px);
+
   margin-bottom: 50px;
-  h2 { text-align: center; }
-  .detailcol { 
-    width: 240px;
-    margin: auto 35px;
-    padding-top: 30px;
-    float: left;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-top: 1px solid $dark-grey;
+  h2 { 
+    text-align: center; 
+    margin-top:0px;
   }
+  .email-form {
+    margin: 20px auto 0;
+  }
+
 }
 
-#section4 {
-  height: 200px;
-}
 
+footer {
+  padding: 20px 0px;
+}
+  
 //////////////////////////////////////////////////
 // STYLE
 //////////////////////////////////////////////////
 
+#body-bg { 
+  background-image: url('/images/background.jpg'); 
+  background-size: cover; 
+}
+
 #section1 {
-  background-image: url('/images/background.jpg');
-  background-size:cover;
 
   #intro-box {
     background-color: white;
@@ -147,7 +185,10 @@ hr {
 }
 
 #section2 {
-  background: $dark-grey;
+  background-color: rgba(57,57,57,0.97);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  
   #explanation {
     color: white;
     .ital {
@@ -158,10 +199,26 @@ hr {
 }
 
 #section3 {
-  background: white;
+  background-color: rgba(255,255,255,0.97);
+  border-top: 2px solid #999;
+
+  h3 {
+    text-align: center;
+  }
 }
 
-#section4 {
-  background-image: url('/images/background.jpg');
-  background-size: cover;
+footer {
+  background-color: #000;
+  color: $grey;
+  text-align: center;
 }
+
+//////////////////////////////////////////////////
+// CONFIRMATION
+//////////////////////////////////////////////////
+
+.confirmation {
+  p { text-align: left; }
+}
+    
+
