@@ -4,12 +4,6 @@ set :markdown_engine, :redcarpet
 #Livereload
 activate :livereload
 
-#Deploy
-
-activate :deploy do |deploy|
-  deploy.method = :git
-end
-
 ### 
 # Compass
 ###
