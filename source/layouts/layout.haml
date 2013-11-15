@@ -28,45 +28,48 @@
     #section1.section
       .container
         #intro 
-          %h1 The New York Letter Project
-          %hr.longrule
-          %h3 Imagine getting a letter that was sent to your address a hundred years ago.
-          %hr.shortrule
-          %p It could be letter home from the trenches of WW1, a piece of a long-forgotten love affair started on your doorstep, or simply a glimpse into the daily lives of the people who lived there before you. 
-          %p Every building has a history. What’s yours?
-          .email-form
-            %form(action="http://theletterproject.us3.list-manage.com/subscribe/post?u=709601dfd383b2eedec16adb3&amp;id=29502d0d86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
-    
-              %input(type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address..." required)
-              %input(type="submit" value="Get a Letter" name="Get a Letter" id="mc-embedded-subscribe" class="button")
+          .mobile-padding
+            %h1 The New York Letter Project
+            %hr.longrule
+            %h3 Imagine getting a letter that was sent to your address a hundred years ago.
+            %hr.shortrule
+            %p It could be letter home from the trenches of WW1, a piece of a long-forgotten love affair started on your doorstep, or simply a glimpse into the daily lives of the people who lived there before you. 
+            %p Every building has a history. What’s yours?
+            .email-form
+              %form(action="http://theletterproject.us3.list-manage.com/subscribe/post?u=709601dfd383b2eedec16adb3&amp;id=29502d0d86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+      
+                %input(type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address..." required)
+                %input(type="submit" value="Get a Letter" name="Get a Letter" id="mc-embedded-subscribe" class="button")
 
 
       .clearfix
 
     #section2.section
       .container
-        #explanation
-          %h2 What is The Letter Project?
-          %p 
-            %strong
-              We're putting letters from the past online and resending them to the people living there now. 
-          %p A letter is a piece of New York's history, a glimpse into the life of someone who made the city what it is today.
-          %p And New Yorkers have always been worth reading.
-          %hr.shortrule
-          %p 
-            %strong These letters are out there, 
-            hidden away in museums and archives. We're working with libraries to digitize them and create an open, online map so you can look up letters once sent to your building, office, or neighborhood.
-          %p You can get a letter by backing us on Kickstarter.
-          %p Your contribution will fund the digitization project and, for every backer, we'll send another letter to its original address, to someone who's never heard of the project.
-          %p It's a simple idea, but we need your help to make it happen.
+        .mobile-padding
+          #explanation
+            %h2 What is The Letter Project?
+            %p 
+              %strong
+                We're putting letters from the past online and resending them to the people living there now. 
+            %p A letter is a piece of New York's history, a glimpse into the life of someone who made the city what it is today.
+            %p And New Yorkers have always been worth reading.
+            %hr.shortrule
+            %p 
+              %strong These letters are out there, 
+              hidden away in museums and archives. We're working with libraries to digitize them and create an open, online map so you can look up letters once sent to your building, office, or neighborhood.
+            %p You can get a letter by backing us on Kickstarter.
+            %p Your contribution will fund the digitization project and, for every backer, we'll send another letter to its original address, to someone who's never heard of the project.
+            %p It's a simple idea, but we need your help to make it happen.
+          #letter-example
+            %img(src="/images/letter.png")
           .email-form
             %form(action="http://theletterproject.us3.list-manage.com/subscribe/post?u=709601dfd383b2eedec16adb3&amp;id=29502d0d86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
     
               %input(type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address..." required)
               %input(type="submit" value="Find out more" name="Get a Letter" id="mc-embedded-subscribe" class="button")
 
-        #letter-example
-          %img(src="/images/letter.png")
+
         .clearfix
 
     #section3.section
@@ -74,20 +77,23 @@
         %h2 How it Works
         %hr.longrule
         .detailcol
-          %h3 From Kickstarter...
-          %img{ src: "/images/kickstarter-porthole.png" }
-          %p Kickstarter is a website where people like you fund creative projects. We're putting the project on Kickstarter to cover the costs of digitizing and sending the letters.
-          %p The Kickstarter campaign will begin in December, and will have some great rewards. Sign up for the email list to hear the latest!
+          .mobile-padding
+            %h3 From Kickstarter...
+            %img{ src: "/images/kickstarter-porthole.png" }
+            %p Kickstarter is a website where people like you fund creative projects. We're putting the project on Kickstarter to cover the costs of digitizing and sending the letters.
+            %p The Kickstarter campaign will begin in December, and will have some great rewards. Sign up for the email list to hear the latest!
         .detailcol
-          %h3 ...to the archives...
-          %img(src="/images/nypl-porthole.png")
-          %p Letters are the core of this project. We're currently building relationships with libraries and archives to find letters sent to New Yorkers in the early 20th Century. 
-          %p If you're a librarian or archivist, please get in touch with us. We'd love to have you involved.
+          .mobile-padding
+            %h3 ...to the archives...
+            %img(src="/images/nypl-porthole.png")
+            %p Letters are the core of this project. We're currently building relationships with libraries and archives to find letters sent to New Yorkers in the early 20th Century. 
+            %p If you're a librarian or archivist, please get in touch with us. We'd love to have you involved.
         .detailcol
-          %h3 ...to your mailbox.
-          %img(src="/images/letter-porthole.png")
-          %p There's nothing like receiving a letter. Each letter will be re-printed on archival paper and will be an object worth keeping.
-          %p And it's not just to you. Every backer supports a second letter, sent to a New Yorker living at the original addresses of our most interesting letters.
+          .mobile-padding
+            %h3 ...to your mailbox.
+            %img(src="/images/letter-porthole.png")
+            %p There's nothing like receiving a letter. Each letter will be re-printed on archival paper and will be an object worth keeping.
+            %p And it's not just to you. Every backer supports a second letter, sent to a New Yorker living at the original addresses of our most interesting letters.
         .clearfix
         .email-form
           %form(action="http://theletterproject.us3.list-manage.com/subscribe/post?u=709601dfd383b2eedec16adb3&amp;id=29502d0d86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
@@ -98,7 +104,8 @@
 
     %footer
       .container
-        The Letter Project is run by Alec Turnbull with the indispensible help of Scott Foreman. Get in touch at info@theletterproject.org
+        .mobile-padding
+          The Letter Project is run by Alec Turnbull with the indispensible help of Scott Foreman. Get in touch at info@theletterproject.org
 
     
     = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
