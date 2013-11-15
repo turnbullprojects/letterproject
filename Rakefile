@@ -4,7 +4,7 @@ task :deploy do
   system "bundle exec middleman build"
   system "mv build /tmp/"
 
-  system "git checkout --orphan gh-pages"
+  system "git checkout gh-pages"
   system "cp -r /tmp/build/*"
   system "git add ."
 
