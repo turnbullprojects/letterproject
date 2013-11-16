@@ -278,6 +278,10 @@ footer {
   background-color: #000;
   color: $grey;
   text-align: center;
+  .credits {
+    font-size: 10px;
+    a { color: $grey; }
+  }
 }
 
 //////////////////////////////////////////////////

@@ -105,7 +105,15 @@
     %footer
       .container
         .mobile-padding
-          The Letter Project is run by Alec Turnbull with the indispensible help of Scott Foreman. Get in touch at info@theletterproject.org
+          %p
+            The Letter Project is run by Alec Turnbull with the indispensible help of Scott Foreman. Get in touch at info@theletterproject.org
+          .credits
+            Photos used via Creative Commons from 
+            %a{ href: 'http://www.flickr.com/photos/sackton/7108307169/sizes/o/'}
+              Tim Sackton
+            and
+            %a{ href: 'http://www.flickr.com/photos/endymion120/5432356930/sizes/l/' }
+              Vincent Desjardins
 
     
     = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
@@ -114,7 +122,7 @@
     = javascript_include_tag "site"
     
     :javascript
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      var _gaq=[['_setAccount','UA-45772752-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
